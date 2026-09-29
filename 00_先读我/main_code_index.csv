@@ -1,0 +1,30 @@
+﻿display_name,relative_path,line,purpose,status
+01_V31_构建母数据库_PyCharm.py,01_V31_#U6784#U5efa#U6bcd#U6570#U636e#U5e93_PyCharm.py,6,Build canonical master data,OK
+v31_stages.py,project/scripts/v31_stages.py,20,Raw workbook to canonical master panel,OK
+v31_master_data.py,project/scripts/v31_master_data.py,63,Master-panel preprocessing and state memory,OK
+02_V31_构建千问时序数据_PyCharm.py,02_V31_#U6784#U5efa#U5343#U95ee#U65f6#U5e8f#U6570#U636e_PyCharm.py,6,Build Qwen train/validation/refit/holdout data,OK
+v31_qwen_data.py,project/scripts/v31_qwen_data.py,18,Chronological generator split implementation,OK
+v31_windows.py,project/scripts/v31_windows.py,17,Generator window construction and horizon guards,OK
+03_V31_训练并重拟合千问_PyCharm.py,03_V31_#U8bad#U7ec3#U5e76#U91cd#U62df#U5408#U5343#U95ee_PyCharm.py,6,Qwen selection and final refit entry,OK
+v31_qwen_train.py,project/scripts/v31_qwen_train.py,145,"QLoRA training, 2018 selection, 2016-2018 refit",OK
+v31_downstream_data.py,project/scripts/v31_downstream_data.py,39,Downstream chronology definitions,OK
+v31_downstream_data.py,project/scripts/v31_downstream_data.py,49,Exact six-step predictor arrays,OK
+v31_experiment_engine.py,project/scripts/v31_experiment_engine.py,26,2020 validation and 2021 test arrays,OK
+v31_experiment_engine.py,project/scripts/v31_experiment_engine.py,110,TDR-PRSN training/evaluation core,OK
+v31_experiment_engine.py,project/scripts/v31_experiment_engine.py,73,GRU training/evaluation core,OK
+v31_tdr.py,project/scripts/v31_tdr.py,48,TDR-PRSN training wrapper around the first-paper implementation,OK
+v31_gru.py,project/scripts/v31_gru.py,18,GRU control implementation,OK
+06_V31_等预算真实模拟替代主实验_PyCharm.py,06_V31_#U7b49#U9884#U7b97#U771f#U5b9e#U6a21#U62df#U66ff#U4ee3#U4e3b#U5b9e#U9a8c_PyCharm.py,6,Main substitution experiment entry,OK
+v31_stages.py,project/scripts/v31_stages.py,195,R100/Q25/Q50/Q75/Q100 and controls,OK
+11_V41_Additive_Augmentation_PyCharm.py,11_V41_Additive_Augmentation_PyCharm.py,13,R100+Q50 and reduced-update main entry,OK
+v41_stage11.py,project/scripts/v41_stage11.py,872,Additive augmentation orchestration,OK
+v41_data.py,project/scripts/v41_data.py,112,Additive real-plus-synthetic training arrays,OK
+10_V40_MultiHorizon_OpenLoop_PyCharm.py,10_V40_MultiHorizon_OpenLoop_PyCharm.py,10,Multihorizon/open-loop main entry,OK
+v40_stage10.py,project/scripts/v40_stage10.py,183,H1/H3/H6/H12 and open-loop orchestration,OK
+12_V42_TDR_Qwen_Interaction_Validation_PyCharm.py,12_V42_TDR_Qwen_Interaction_Validation_PyCharm.py,9,Architecture interaction/ablation entry,OK
+v42_stage12.py,project/scripts/v42_stage12.py,300,"Consumer controls, capacity, and ablation",OK
+13_V431_LOSGO_ONECLICK_PyCharm.py,13_V431_LOSGO_ONECLICK_PyCharm.py,9,Formal seven-fold LOSGO one-click entry,OK
+v431_stage13_oneclick.py,project/scripts/v431_stage13_oneclick.py,313,"LOSGO preparation, Qwen refit, synthetic generation, 126 formal runs",OK
+v43_data.py,project/scripts/v43_data.py,17,Held-out structure split and isolation,OK
+v43_fit.py,project/scripts/v43_fit.py,51,Fold-specific downstream training arrays,OK
+TDR_PRSN.py,project/first_model/TDR_PRSN.py,3069,Original first-paper TDR-PRSN source retained for provenance,OK

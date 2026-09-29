@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "data_files": 273,
+  "data_parse_errors": 0,
+  "generator_splits": [
+    {
+      "split": "train",
+      "file": "data/v31_qwen/qwen_train_2016_2017.jsonl",
+      "records": 304,
+      "target_year_min": 2017,
+      "target_year_max": 2017,
+      "sha256": "57367541cb50ad9fa3ddc85579e2b887c447f8a5f623eeb3dc6e2df09739df2d"
+    },
+    {
+      "split": "validation",
+      "file": "data/v31_qwen/qwen_dev_2018.jsonl",
+      "records": 278,
+      "target_year_min": 2018,
+      "target_year_max": 2018,
+      "sha256": "633cec2fffb40488a253a37206a8990885629c31a5b6516860eaf5dbf2a88fe5"
+    },
+    {
+      "split": "final_refit",
+      "file": "data/v31_qwen/qwen_refit_2016_2018.jsonl",
+      "records": 676,
+      "target_year_min": 2017,
+      "target_year_max": 2018,
+      "sha256": "763b0fe304eff2d351526767fcdf891e71c5ccedc12acc76f692b37fd5da6344"
+    },
+    {
+      "split": "holdout_2019",
+      "file": "data/v31_qwen/qwen_holdout_2019.jsonl",
+      "records": 277,
+      "target_year_min": 2019,
+      "target_year_max": 2019,
+      "sha256": "02af5f58e3c81b823f81c6ae75fbb224600dd985438497a4ff85be4cdf52aff6"
+    }
+  ],
+  "downstream_splits": [
+    {
+      "split": "train_2016_2019",
+      "role": "Downstream training targets",
+      "target_years": "2016,2017,2018,2019",
+      "samples": 1241,
+      "structures": 19,
+      "X_shape": "(1241, 6, 23)",
+      "metadata_csv": "derived_splits/train_2016_2019_metadata.csv",
+      "arrays_npz": "derived_splits/train_2016_2019_seq6.npz",
+      "key_count": 1241,
+      "sha256_metadata": "90c87691dd942c2fbed60dbc81ce86fce6f977b96fa0800741110095f58565d7",
+      "sha256_npz": "ec7564197ff2a8c052f5ba2ea2ebef62cf6d2e1615a9dcfe4bd08500a69e27a2"
+    },
+    {
+      "split": "validation_2020",
+      "role": "Downstream model selection / early stopping",
+      "target_years": "2020",
+      "samples": 660,
+      "structures": 19,
+      "X_shape": "(660, 6, 23)",
+      "metadata_csv": "derived_splits/validation_2020_metadata.csv",
+      "arrays_npz": "derived_splits/validation_2020_seq6.npz",
+      "key_count": 660,
+      "sha256_metadata": "6a0df0e4ecec337333e65b82969cafb59b4724a532a507e05595599113b00672",
+      "sha256_npz": "5bff0e944e341e0909fde732be78e661899e668eebb14eacfc8c7724a076906a"
+    },
+    {
+      "split": "test_2021",
+      "role": "Frozen chronological test; never used for selection",
+      "target_years": "2021",
+      "samples": 833,
+      "structures": 19,
+      "X_shape": "(833, 6, 23)",
+      "metadata_csv": "derived_splits/test_2021_metadata.csv",
+      "arrays_npz": "derived_splits/test_2021_seq6.npz",
+      "key_count": 833,
+      "sha256_metadata": "cc1dd56f211b8a5d0e79c33074af7013dc18e4a783dd22faea5eeebfb5c8f75d",
+      "sha256_npz": "0571b71e6d57573383de64a0e275dc19082bfd85fc35b8c3ee3b9daf6cf4c297"
+    }
+  ],
+  "code_entries": 29,
+  "missing_code_entries": 0,
+  "compileall_checked_separately": true
+}

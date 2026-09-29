@@ -1,0 +1,5 @@
+﻿split,file,records,target_year_min,target_year_max,sha256
+train,data/v31_qwen/qwen_train_2016_2017.jsonl,304,2017,2017,57367541cb50ad9fa3ddc85579e2b887c447f8a5f623eeb3dc6e2df09739df2d
+validation,data/v31_qwen/qwen_dev_2018.jsonl,278,2018,2018,633cec2fffb40488a253a37206a8990885629c31a5b6516860eaf5dbf2a88fe5
+final_refit,data/v31_qwen/qwen_refit_2016_2018.jsonl,676,2017,2018,763b0fe304eff2d351526767fcdf891e71c5ccedc12acc76f692b37fd5da6344
+holdout_2019,data/v31_qwen/qwen_holdout_2019.jsonl,277,2019,2019,02af5f58e3c81b823f81c6ae75fbb224600dd985438497a4ff85be4cdf52aff6
